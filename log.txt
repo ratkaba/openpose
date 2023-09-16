@@ -1,0 +1,425 @@
+[00:00:00] Build started
+[00:00:00] git clone -q --branch=master https://github.com/CMU-Perceptual-Computing-Lab/openpose.git c:\openpose
+[00:00:05] git checkout -qf 80d4c5f7b25ba4c3bf5745ab7d0e6ccd3db8b242
+[00:00:06] mkdir build
+[00:00:06] cd build
+[00:00:06] cmake -DGPU_MODE=CPU_ONLY -G "Visual Studio 16 2019" -A x64 ..
+[00:00:06] CMake Warning (dev) at CMakeLists.txt:19 (project):
+[00:00:06]   cmake_minimum_required() should be called prior to this top-level project()
+[00:00:06]   call.  Please see the cmake-commands(7) manual for usage documentation of
+[00:00:06]   both commands.
+[00:00:06] This warning is for project developers.  Use -Wno-dev to suppress it.
+[00:00:06] 
+[00:00:19] -- The C compiler identification is MSVC 19.29.30151.0
+[00:00:23] -- The CXX compiler identification is MSVC 19.29.30151.0
+[00:00:23] -- Detecting C compiler ABI info
+[00:00:27] -- Detecting C compiler ABI info - done
+[00:00:27] -- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe - skipped
+[00:00:27] -- Detecting C compile features
+[00:00:27] -- Detecting C compile features - done
+[00:00:27] -- Detecting CXX compiler ABI info
+[00:00:30] -- Detecting CXX compiler ABI info - done
+[00:00:30] -- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe - skipped
+[00:00:30] -- Detecting CXX compile features
+[00:00:30] -- Detecting CXX compile features - done
+[00:00:30] -- CMAKE_VERSION = 3.26.4
+[00:00:30] -- Building CPU Only.
+[00:00:30] -- Downloading windows dependencies...
+[00:00:30] -- Downloading http://posefs1.perception.cs.cmu.edu/OpenPose/3rdparty/windows/opencv_450_v15_2020_11_18.zip...
+[00:00:33] -- Extracting C:/openpose/3rdparty/windows/opencv_450_v15_2020_11_18.zip...
+[00:00:34] -- Downloading http://posefs1.perception.cs.cmu.edu/OpenPose/3rdparty/windows/caffe3rdparty_16_2020_11_14.zip...
+[00:00:35] -- Extracting C:/openpose/3rdparty/windows/caffe3rdparty_16_2020_11_14.zip...
+[00:00:37] -- Downloading http://posefs1.perception.cs.cmu.edu/OpenPose/3rdparty/windows/caffe_cpu_2018_05_27.zip...
+[00:00:39] -- Extracting C:/openpose/3rdparty/windows/caffe_cpu_2018_05_27.zip...
+[00:00:40] -- Windows dependencies downloaded.
+[00:00:40] -- Adding Example Calibration
+[00:00:40] -- Adding Example tutorial_add_module_custom_post_processing
+[00:00:40] -- Adding Example tutorial_api_thread_1_user_processing_function
+[00:00:40] -- Adding Example tutorial_api_thread_2_user_input_processing_output_and_datum
+[00:00:40] -- Adding Example OpenPoseDemo
+[00:00:40] -- Adding Example 01_body_from_image_default
+[00:00:40] -- Adding Example 02_whole_body_from_image_default
+[00:00:40] -- Adding Example 03_keypoints_from_image
+[00:00:40] -- Adding Example 04_keypoints_from_images
+[00:00:40] -- Adding Example 05_keypoints_from_images_multi_gpu
+[00:00:40] -- Adding Example 06_face_from_image
+[00:00:40] -- Adding Example 07_hand_from_image
+[00:00:40] -- Adding Example 08_heatmaps_from_image
+[00:00:40] -- Adding Example 09_keypoints_from_heatmaps
+[00:00:40] -- Adding Example 10_asynchronous_custom_input
+[00:00:40] -- Adding Example 11_asynchronous_custom_input_multi_camera
+[00:00:40] -- Adding Example 12_asynchronous_custom_output
+[00:00:40] -- Adding Example 13_asynchronous_custom_input_output_and_datum
+[00:00:40] -- Adding Example 14_synchronous_custom_input
+[00:00:40] -- Adding Example 15_synchronous_custom_preprocessing
+[00:00:40] -- Adding Example 16_synchronous_custom_postprocessing
+[00:00:40] -- Adding Example 17_synchronous_custom_output
+[00:00:40] -- Adding Example 18_synchronous_custom_all_and_datum
+[00:00:40] -- Download the models.
+[00:00:40] -- Downloading BODY_25 model...
+[00:00:40] -- NOTE: This process might take several minutes depending on your internet connection.
+[00:00:44] -- Not downloading body (COCO) model
+[00:00:44] -- Not downloading body (MPI) model
+[00:00:44] -- Downloading face model...
+[00:00:44] -- NOTE: This process might take several minutes depending on your internet connection.
+[00:00:47] -- Downloading hand model...
+[00:00:47] -- NOTE: This process might take several minutes depending on your internet connection.
+[00:00:51] -- Models Downloaded.
+[00:00:51] -- Configuring done (44.8s)
+[00:00:51] -- Generating done (0.1s)
+[00:00:51] -- Build files have been written to: C:/openpose/build
+[00:00:51] cmake --build . --config "Release"
+[00:00:52] Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
+[00:00:52] Copyright (C) Microsoft Corporation. All rights reserved.
+[00:00:52] 
+[00:00:54]   cameraParameterReader.cpp
+[00:00:54]   jointAngleEstimation.cpp
+[00:00:54]   poseTriangulation.cpp
+[00:01:00]   poseTriangulationPrivate.cpp
+[00:01:00]   cameraParameterEstimation.cpp
+[00:01:02]   gridPatternFunctions.cpp
+[00:01:03] C:\openpose\src\openpose\calibration\cameraParameterEstimation.cpp(199,29): warning C4244: 'return': conversion from 'long double' to 'double', possible loss of data [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:01:09]   array.cpp
+[00:01:09]   arrayCpuGpu.cpp
+[00:01:10] C:\openpose\3rdparty\windows\caffe3rdparty\include\google/protobuf/message_lite.h(247,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file C:\openpose\src\openpose\core\arrayCpuGpu.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:01:11] C:\openpose\3rdparty\windows\caffe_cpu\include\caffe/blob.hpp(101,1): warning C4267: 'return': conversion from 'size_t' to 'int32_t', possible loss of data (compiling source file C:\openpose\src\openpose\core\arrayCpuGpu.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:01:11] C:\openpose\3rdparty\windows\caffe_cpu\include\caffe/blob.hpp(100): message : while compiling class template member function 'int32_t caffe::Blob<T>::num_axes(void) const' [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:01:11]           with
+[00:01:11]           [
+[00:01:11]               T=double
+[00:01:11]           ] (compiling source file C:\openpose\src\openpose\core\arrayCpuGpu.cpp)
+[00:01:11] C:\openpose\src\openpose\core\arrayCpuGpu.cpp(265): message : see reference to function template instantiation 'int32_t caffe::Blob<T>::num_axes(void) const' being compiled [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:01:11]           with
+[00:01:11]           [
+[00:01:11]               T=double
+[00:01:11]           ]
+[00:01:11] C:\openpose\src\openpose\core\arrayCpuGpu.cpp(130): message : see reference to class template instantiation 'caffe::Blob<T>' being compiled [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:01:11]           with
+[00:01:11]           [
+[00:01:11]               T=double
+[00:01:11]           ]
+[00:01:11] C:\openpose\src\openpose\core\arrayCpuGpu.cpp(121): message : while compiling class template member function 'op::ArrayCpuGpu<double>::ArrayCpuGpu(const int,const int,const int,const int)' [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:01:11] C:\openpose\src\openpose\core\arrayCpuGpu.cpp(890): message : see reference to class template instantiation 'op::ArrayCpuGpu<double>' being compiled [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:01:19]   cvMatToOpInput.cpp
+[00:01:24]   cvMatToOpOutput.cpp
+[00:01:29]   datum.cpp
+[00:01:29]   gpuRenderer.cpp
+[00:01:31]   keepTopNPeople.cpp
+[00:01:31]   keypointScaler.cpp
+[00:01:33]   matrix.cpp
+[00:01:33]   opOutputToCvMat.cpp
+[00:01:36]   point.cpp
+[00:01:36]   rectangle.cpp
+[00:01:44]   renderer.cpp
+[00:01:44]   scaleAndSizeExtractor.cpp
+[00:01:45]   verbosePrinter.cpp
+[00:01:47]   faceDetector.cpp
+[00:01:47]   faceDetectorOpenCV.cpp
+[00:01:48]   faceExtractorCaffe.cpp
+[00:01:49] C:\openpose\3rdparty\windows\caffe3rdparty\include\google/protobuf/message_lite.h(247,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file C:\openpose\src\openpose\face\faceExtractorCaffe.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:01:51]   faceExtractorNet.cpp
+[00:01:52]   faceCpuRenderer.cpp
+[00:01:54]   faceGpuRenderer.cpp
+[00:01:54]   faceRenderer.cpp
+[00:01:56]   renderFace.cpp
+[00:01:56]   bvhSaver.cpp
+[00:01:56]   cocoJsonSaver.cpp
+[00:01:58]   fileSaver.cpp
+[00:01:58]   fileStream.cpp
+[00:01:59]   heatMapSaver.cpp
+[00:02:02]   imageSaver.cpp
+[00:02:03]   jsonOfstream.cpp
+[00:02:04]   keypointSaver.cpp
+[00:02:05]   peopleJsonSaver.cpp
+[00:02:06]   udpSender.cpp
+[00:02:07]   videoSaver.cpp
+[00:02:07]   cuda.cpp
+[00:02:10]   gpu.cpp
+[00:02:10]   opencl.cpp
+[00:02:11]   frameDisplayer.cpp
+[00:02:12]   gui.cpp
+[00:02:15]   guiAdam.cpp
+[00:02:15]   gui3D.cpp
+[00:02:15]   guiInfoAdder.cpp
+[00:02:17]   handDetector.cpp
+[00:02:19]   handDetectorFromTxt.cpp
+[00:02:20]   handExtractorCaffe.cpp
+[00:02:21] C:\openpose\3rdparty\windows\caffe3rdparty\include\google/protobuf/message_lite.h(247,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file C:\openpose\src\openpose\hand\handExtractorCaffe.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:21]   handExtractorNet.cpp
+[00:02:22]   handCpuRenderer.cpp
+[00:02:24]   handGpuRenderer.cpp
+[00:02:26]   handRenderer.cpp
+[00:02:26]   renderHand.cpp
+[00:02:27]   bodyPartConnectorBase.cpp
+[00:02:28]   bodyPartConnectorBaseCL.cpp
+[00:02:30]   bodyPartConnectorCaffe.cpp
+[00:02:32] C:\openpose\3rdparty\windows\caffe3rdparty\include\google/protobuf/message_lite.h(247,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file C:\openpose\src\openpose\net\bodyPartConnectorCaffe.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:33]   maximumBase.cpp
+[00:02:34]   maximumCaffe.cpp
+[00:02:35] C:\openpose\3rdparty\windows\caffe3rdparty\include\google/protobuf/message_lite.h(247,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file C:\openpose\src\openpose\net\maximumCaffe.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:36]   netCaffe.cpp
+[00:02:37] C:\openpose\3rdparty\windows\caffe3rdparty\include\google/protobuf/message_lite.h(247,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file C:\openpose\src\openpose\net\netCaffe.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:37]   netOpenCv.cpp
+[00:02:38] C:\openpose\3rdparty\windows\caffe_cpu\include\caffe/layer.hpp(297,55): warning C4100: 'bottom_index': unreferenced formal parameter (compiling source file C:\openpose\src\openpose\net\netCaffe.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:38] C:\openpose\3rdparty\windows\caffe_cpu\include\caffe/layer.hpp(297): message : while compiling class template member function 'bool caffe::Layer<Dtype>::AllowForceBackward(const int32_t) const' [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:38]           with
+[00:02:38]           [
+[00:02:38]               Dtype=float
+[00:02:38]           ] (compiling source file C:\openpose\src\openpose\net\netCaffe.cpp)
+[00:02:38] C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(1667): message : see reference to class template instantiation 'caffe::Layer<Dtype>' being compiled [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:38]           with
+[00:02:38]           [
+[00:02:38]               Dtype=float
+[00:02:38]           ] (compiling source file C:\openpose\src\openpose\net\netCaffe.cpp)
+[00:02:38] C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(1665): message : while compiling class template member function 'void std::vector<boost::shared_ptr<caffe::Layer<Dtype>>,std::allocator<boost::shared_ptr<caffe::Layer<Dtype>>>>::_Destroy(boost::shared_ptr<caffe::Layer<Dtype>> *,boost::shared_ptr<caffe::Layer<Dtype>> *)' [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:38]           with
+[00:02:38]           [
+[00:02:38]               Dtype=float
+[00:02:38]           ] (compiling source file C:\openpose\src\openpose\net\netCaffe.cpp)
+[00:02:38] C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\vector(1751): message : see reference to function template instantiation 'void std::vector<boost::shared_ptr<caffe::Layer<Dtype>>,std::allocator<boost::shared_ptr<caffe::Layer<Dtype>>>>::_Destroy(boost::shared_ptr<caffe::Layer<Dtype>> *,boost::shared_ptr<caffe::Layer<Dtype>> *)' being compiled [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:38]           with
+[00:02:38]           [
+[00:02:38]               Dtype=float
+[00:02:38]           ] (compiling source file C:\openpose\src\openpose\net\netCaffe.cpp)
+[00:02:38] C:\openpose\3rdparty\windows\caffe_cpu\include\caffe/net.hpp(301): message : see reference to class template instantiation 'std::vector<boost::shared_ptr<caffe::Layer<Dtype>>,std::allocator<boost::shared_ptr<caffe::Layer<Dtype>>>>' being compiled [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:38]           with
+[00:02:38]           [
+[00:02:38]               Dtype=float
+[00:02:38]           ] (compiling source file C:\openpose\src\openpose\net\netCaffe.cpp)
+[00:02:38] C:\openpose\src\openpose\net\netCaffe.cpp(112): message : see reference to class template instantiation 'caffe::Net<float>' being compiled [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:38] C:\openpose\3rdparty\windows\caffe_cpu\include\caffe/layer.hpp(100,55): warning C4100: 'top': unreferenced formal parameter (compiling source file C:\openpose\src\openpose\net\netCaffe.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:38] C:\openpose\3rdparty\windows\caffe_cpu\include\caffe/layer.hpp(100): message : while compiling class template member function 'void caffe::Layer<Dtype>::LayerSetUp(const std::vector<caffe::Blob<Dtype> *,std::allocator<caffe::Blob<Dtype> *>> &,const std::vector<caffe::Blob<Dtype> *,std::allocator<caffe::Blob<Dtype> *>> &)' [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:38]           with
+[00:02:38]           [
+[00:02:38]               Dtype=float
+[00:02:38]           ] (compiling source file C:\openpose\src\openpose\net\netCaffe.cpp)
+[00:02:38] C:\openpose\3rdparty\windows\caffe_cpu\include\caffe/layer.hpp(99,55): warning C4100: 'bottom': unreferenced formal parameter (compiling source file C:\openpose\src\openpose\net\netCaffe.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:38] C:\openpose\3rdparty\windows\caffe3rdparty\include\google/protobuf/message_lite.h(247,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file C:\openpose\src\openpose\net\netOpenCv.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:39]   nmsBase.cpp
+[00:02:42]   nmsBaseCL.cpp
+[00:02:43]   nmsCaffe.cpp
+[00:02:44] C:\openpose\3rdparty\windows\caffe3rdparty\include\google/protobuf/message_lite.h(247,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file C:\openpose\src\openpose\net\nmsCaffe.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:46]   resizeAndMergeBase.cpp
+[00:02:46]   resizeAndMergeBaseCL.cpp
+[00:02:47]   resizeAndMergeCaffe.cpp
+[00:02:48] C:\openpose\3rdparty\windows\caffe3rdparty\include\google/protobuf/message_lite.h(247,32): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data (compiling source file C:\openpose\src\openpose\net\resizeAndMergeCaffe.cpp) [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:02:51]   poseCpuRenderer.cpp
+[00:02:51]   poseExtractor.cpp
+[00:02:52]   poseExtractorCaffe.cpp
+[00:02:53]   poseExtractorNet.cpp
+[00:02:55]   poseGpuRenderer.cpp
+[00:02:57]   poseParameters.cpp
+[00:02:57]   poseParametersRender.cpp
+[00:03:00]   poseRenderer.cpp
+[00:03:02]   renderPose.cpp
+[00:03:02]   datumProducer.cpp
+[00:03:03]   flirReader.cpp
+[00:03:07]   imageDirectoryReader.cpp
+[00:03:07]   ipCameraReader.cpp
+[00:03:08]   producer.cpp
+[00:03:10]   spinnakerWrapper.cpp
+[00:03:13]   videoCaptureReader.cpp
+[00:03:15]   videoReader.cpp
+[00:03:18]   webcamReader.cpp
+[00:03:19]   personIdExtractor.cpp
+[00:03:23]   personTracker.cpp
+[00:03:23]   pyramidalLK.cpp
+[00:03:26]   unityBinding.cpp
+[00:03:26]   errorAndLog.cpp
+[00:03:27] C:\openpose\src\openpose\utilities\errorAndLog.cpp(120,23): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:03:29]   fileSystem.cpp
+[00:03:29]   flagsToOpenPose.cpp
+[00:03:30] C:\openpose\src\openpose\utilities\flagsToOpenPose.cpp(331,32): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:03:31]   keypoint.cpp
+[00:03:31] C:\openpose\src\openpose\utilities\fileSystem.cpp(136,30): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\openpose\build\src\openpose\openpose.vcxproj]
+[00:03:34]   openCv.cpp
+[00:03:36]   openCvPrivate.cpp
+[00:03:38]   profiler.cpp
+[00:03:40]   wrapperAuxiliary.cpp
+[00:03:40]   wrapperStructExtra.cpp
+[00:03:41]   wrapperStructFace.cpp
+[00:03:43]   wrapperStructGui.cpp
+[00:03:44]   wrapperStructHand.cpp
+[00:03:44]   wrapperStructInput.cpp
+[00:03:45]   wrapperStructOutput.cpp
+[00:03:45]   wrapperStructPose.cpp
+[00:03:47]   defineTemplates.cpp
+[00:03:49]   defineTemplates.cpp
+[00:03:51]   string.cpp
+[00:03:52]   defineTemplates.cpp
+[00:03:53]   defineTemplates.cpp
+[00:03:56]   defineTemplates.cpp
+[00:03:58]   defineTemplates.cpp
+[00:04:00]   defineTemplates.cpp
+[00:04:02]   defineTemplates.cpp
+[00:04:03]   defineTemplates.cpp
+[00:04:09]   defineTemplates.cpp
+[00:04:10]   string.cpp
+[00:04:13]   defineTemplates.cpp
+[00:04:21]      Creating library C:/openpose/build/src/openpose/Release/openpose.lib and object C:/openpose/build/src/openpose/Release/openpose.exp
+[00:04:21]   LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+[00:04:21]   openpose.vcxproj -> C:\openpose\build\x64\Release\openpose.dll
+[00:04:22]   01_body_from_image_default.cpp
+[00:04:26]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/01_body_from_image_default.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/01_body_from_image_default.exp
+[00:04:26]   01_body_from_image_default.vcxproj -> C:\openpose\build\x64\Release\01_body_from_image_default.exe
+[00:04:27]   02_whole_body_from_image_default.cpp
+[00:04:30]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/02_whole_body_from_image_default.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/02_whole_body_from_image_default.exp
+[00:04:30]   02_whole_body_from_image_default.vcxproj -> C:\openpose\build\x64\Release\02_whole_body_from_image_default.exe
+[00:04:31]   03_keypoints_from_image.cpp
+[00:04:34]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/03_keypoints_from_image.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/03_keypoints_from_image.exp
+[00:04:34]   03_keypoints_from_image.vcxproj -> C:\openpose\build\x64\Release\03_keypoints_from_image.exe
+[00:04:35]   04_keypoints_from_images.cpp
+[00:04:39]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/04_keypoints_from_images.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/04_keypoints_from_images.exp
+[00:04:39]   04_keypoints_from_images.vcxproj -> C:\openpose\build\x64\Release\04_keypoints_from_images.exe
+[00:04:40]   05_keypoints_from_images_multi_gpu.cpp
+[00:04:44]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/05_keypoints_from_images_multi_gpu.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/05_keypoints_from_images_multi_gpu.exp
+[00:04:44]   05_keypoints_from_images_multi_gpu.vcxproj -> C:\openpose\build\x64\Release\05_keypoints_from_images_multi_gpu.exe
+[00:04:45]   06_face_from_image.cpp
+[00:04:49]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/06_face_from_image.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/06_face_from_image.exp
+[00:04:49]   06_face_from_image.vcxproj -> C:\openpose\build\x64\Release\06_face_from_image.exe
+[00:04:50]   07_hand_from_image.cpp
+[00:04:53]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/07_hand_from_image.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/07_hand_from_image.exp
+[00:04:53]   07_hand_from_image.vcxproj -> C:\openpose\build\x64\Release\07_hand_from_image.exe
+[00:04:54]   08_heatmaps_from_image.cpp
+[00:04:58]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/08_heatmaps_from_image.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/08_heatmaps_from_image.exp
+[00:04:58]   08_heatmaps_from_image.vcxproj -> C:\openpose\build\x64\Release\08_heatmaps_from_image.exe
+[00:04:59]   09_keypoints_from_heatmaps.cpp
+[00:05:03]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/09_keypoints_from_heatmaps.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/09_keypoints_from_heatmaps.exp
+[00:05:03]   09_keypoints_from_heatmaps.vcxproj -> C:\openpose\build\x64\Release\09_keypoints_from_heatmaps.exe
+[00:05:04]   10_asynchronous_custom_input.cpp
+[00:05:07]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/10_asynchronous_custom_input.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/10_asynchronous_custom_input.exp
+[00:05:07]   10_asynchronous_custom_input.vcxproj -> C:\openpose\build\x64\Release\10_asynchronous_custom_input.exe
+[00:05:08]   11_asynchronous_custom_input_multi_camera.cpp
+[00:05:12]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/11_asynchronous_custom_input_multi_camera.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/11_asynchronous_custom_input_multi_camera.exp
+[00:05:12]   11_asynchronous_custom_input_multi_camera.vcxproj -> C:\openpose\build\x64\Release\11_asynchronous_custom_input_multi_camera.exe
+[00:05:13]   12_asynchronous_custom_output.cpp
+[00:05:14] C:\openpose\include\openpose/flags.hpp(49,1): warning C4245: 'initializing': conversion from 'int' to 'google::uint64', signed/unsigned mismatch [C:\openpose\build\examples\tutorial_api_cpp\12_asynchronous_custom_output.vcxproj]
+[00:05:16]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/12_asynchronous_custom_output.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/12_asynchronous_custom_output.exp
+[00:05:16]   12_asynchronous_custom_output.vcxproj -> C:\openpose\build\x64\Release\12_asynchronous_custom_output.exe
+[00:05:17]   13_asynchronous_custom_input_output_and_datum.cpp
+[00:05:34]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/13_asynchronous_custom_input_output_and_datum.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/13_asynchronous_custom_input_output_and_datum.exp
+[00:05:34]   13_asynchronous_custom_input_output_and_datum.vcxproj -> C:\openpose\build\x64\Release\13_asynchronous_custom_input_output_and_datum.exe
+[00:05:35]   14_synchronous_custom_input.cpp
+[00:05:38]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/14_synchronous_custom_input.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/14_synchronous_custom_input.exp
+[00:05:38]   14_synchronous_custom_input.vcxproj -> C:\openpose\build\x64\Release\14_synchronous_custom_input.exe
+[00:05:39]   15_synchronous_custom_preprocessing.cpp
+[00:05:40] C:\openpose\include\openpose/flags.hpp(49,1): warning C4245: 'initializing': conversion from 'int' to 'google::uint64', signed/unsigned mismatch [C:\openpose\build\examples\tutorial_api_cpp\15_synchronous_custom_preprocessing.vcxproj]
+[00:05:42]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/15_synchronous_custom_preprocessing.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/15_synchronous_custom_preprocessing.exp
+[00:05:42]   15_synchronous_custom_preprocessing.vcxproj -> C:\openpose\build\x64\Release\15_synchronous_custom_preprocessing.exe
+[00:05:43]   16_synchronous_custom_postprocessing.cpp
+[00:05:44] C:\openpose\include\openpose/flags.hpp(49,1): warning C4245: 'initializing': conversion from 'int' to 'google::uint64', signed/unsigned mismatch [C:\openpose\build\examples\tutorial_api_cpp\16_synchronous_custom_postprocessing.vcxproj]
+[00:05:47]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/16_synchronous_custom_postprocessing.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/16_synchronous_custom_postprocessing.exp
+[00:05:47]   16_synchronous_custom_postprocessing.vcxproj -> C:\openpose\build\x64\Release\16_synchronous_custom_postprocessing.exe
+[00:05:48]   17_synchronous_custom_output.cpp
+[00:05:49] C:\openpose\include\openpose/flags.hpp(49,1): warning C4245: 'initializing': conversion from 'int' to 'google::uint64', signed/unsigned mismatch [C:\openpose\build\examples\tutorial_api_cpp\17_synchronous_custom_output.vcxproj]
+[00:05:51]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/17_synchronous_custom_output.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/17_synchronous_custom_output.exp
+[00:05:51]   17_synchronous_custom_output.vcxproj -> C:\openpose\build\x64\Release\17_synchronous_custom_output.exe
+[00:05:52]   18_synchronous_custom_all_and_datum.cpp
+[00:06:08]      Creating library C:/openpose/build/examples/tutorial_api_cpp/Release/18_synchronous_custom_all_and_datum.lib and object C:/openpose/build/examples/tutorial_api_cpp/Release/18_synchronous_custom_all_and_datum.exp
+[00:06:08]   18_synchronous_custom_all_and_datum.vcxproj -> C:\openpose\build\x64\Release\18_synchronous_custom_all_and_datum.exe
+[00:06:09]   calibration.cpp
+[00:06:12]      Creating library C:/openpose/build/examples/calibration/Release/Calibration.lib and object C:/openpose/build/examples/calibration/Release/Calibration.exp
+[00:06:12]   Calibration.vcxproj -> C:\openpose\build\x64\Release\Calibration.exe
+[00:06:13]   openpose.cpp
+[00:06:13] C:\openpose\include\openpose/flags.hpp(49,1): warning C4245: 'initializing': conversion from 'int' to 'google::uint64', signed/unsigned mismatch [C:\openpose\build\examples\openpose\OpenPoseDemo.vcxproj]
+[00:06:15]      Creating library C:/openpose/build/examples/openpose/Release/OpenPoseDemo.lib and object C:/openpose/build/examples/openpose/Release/OpenPoseDemo.exp
+[00:06:15]   OpenPoseDemo.vcxproj -> C:\openpose\build\x64\Release\OpenPoseDemo.exe
+[00:06:16]   tutorial_add_module_custom_post_processing.cpp
+[00:06:16] C:\openpose\include\openpose/flags.hpp(49,1): warning C4245: 'initializing': conversion from 'int' to 'google::uint64', signed/unsigned mismatch [C:\openpose\build\examples\deprecated\tutorial_add_module_custom_post_processing.vcxproj]
+[00:06:31]      Creating library C:/openpose/build/examples/deprecated/Release/tutorial_add_module_custom_post_processing.lib and object C:/openpose/build/examples/deprecated/Release/tutorial_add_module_custom_post_processing.exp
+[00:06:31]   tutorial_add_module_custom_post_processing.vcxproj -> C:\openpose\build\x64\Release\tutorial_add_module_custom_post_processing.exe
+[00:06:32]   tutorial_api_thread_1_user_processing_function.cpp
+[00:06:33] C:\openpose\include\openpose/flags.hpp(49,1): warning C4245: 'initializing': conversion from 'int' to 'google::uint64', signed/unsigned mismatch [C:\openpose\build\examples\deprecated\tutorial_api_thread_1_user_processing_function.vcxproj]
+[00:06:35]      Creating library C:/openpose/build/examples/deprecated/Release/tutorial_api_thread_1_user_processing_function.lib and object C:/openpose/build/examples/deprecated/Release/tutorial_api_thread_1_user_processing_function.exp
+[00:06:35]   tutorial_api_thread_1_user_processing_function.vcxproj -> C:\openpose\build\x64\Release\tutorial_api_thread_1_user_processing_function.exe
+[00:06:36]   tutorial_api_thread_2_user_input_processing_output_and_datum.cpp
+[00:06:41]      Creating library C:/openpose/build/examples/deprecated/Release/tutorial_api_thread_2_user_input_processing_output_and_datum.lib and object C:/openpose/build/examples/deprecated/Release/tutorial_api_thread_2_user_input_processing_output_and_datum.exp
+[00:06:41]   tutorial_api_thread_2_user_input_processing_output_and_datum.vcxproj -> C:\openpose\build\x64\Release\tutorial_api_thread_2_user_input_processing_output_and_datum.exe
+[00:06:42] cd ..
+[00:06:43] mkdir artifacts
+[00:06:43] 
+[00:06:43] 
+[00:06:43]     Directory: C:\openpose
+[00:06:43] 
+[00:06:43] 
+[00:06:43] Mode                LastWriteTime         Length Name                                                                                                                                                                                
+[00:06:43] ----                -------------         ------ ----                                                                                                                                                                                
+[00:06:43] d-----        7/15/2023   1:57 PM                artifacts                                                                                                                                                                           
+[00:06:43] 
+[00:06:43] 
+[00:06:43] mkdir artifacts/bin
+[00:06:43] 
+[00:06:43] 
+[00:06:43]     Directory: C:\openpose\artifacts
+[00:06:43] 
+[00:06:43] 
+[00:06:43] Mode                LastWriteTime         Length Name                                                                                                                                                                                
+[00:06:43] ----                -------------         ------ ----                                                                                                                                                                                
+[00:06:43] d-----        7/15/2023   1:57 PM                bin                                                                                                                                                                                 
+[00:06:43] 
+[00:06:43] 
+[00:06:43] mkdir artifacts/examples
+[00:06:43] 
+[00:06:43] 
+[00:06:43]     Directory: C:\openpose\artifacts
+[00:06:43] 
+[00:06:43] 
+[00:06:43] Mode                LastWriteTime         Length Name                                                                                                                                                                                
+[00:06:43] ----                -------------         ------ ----                                                                                                                                                                                
+[00:06:43] d-----        7/15/2023   1:57 PM                examples                                                                                                                                                                            
+[00:06:43] 
+[00:06:43] 
+[00:06:43] mkdir artifacts/examples/media
+[00:06:43] 
+[00:06:43] 
+[00:06:43]     Directory: C:\openpose\artifacts\examples
+[00:06:43] 
+[00:06:43] 
+[00:06:43] Mode                LastWriteTime         Length Name                                                                                                                                                                                
+[00:06:43] ----                -------------         ------ ----                                                                                                                                                                                
+[00:06:43] d-----        7/15/2023   1:57 PM                media                                                                                                                                                                               
+[00:06:43] 
+[00:06:43] 
+[00:06:43] mkdir artifacts/include
+[00:06:43] 
+[00:06:43] 
+[00:06:43]     Directory: C:\openpose\artifacts
+[00:06:43] 
+[00:06:43] 
+[00:06:43] Mode                LastWriteTime         Length Name                                                                                                                                                                                
+[00:06:43] ----                -------------         ------ ----                                                                                                                                                                                
+[00:06:43] d-----        7/15/2023   1:57 PM                include                                                                                                                                                                             
+[00:06:43] 
+[00:06:43] 
+[00:06:43] mkdir artifacts/lib
+[00:06:43] 
+[00:06:43] 
+[00:06:43]     Directory: C:\openpose\artifacts
+[00:06:43] 
+[00:06:43] 
+[00:06:43] Mode                LastWriteTime         Length Name                                                                                                                                                                                
+[00:06:43] ----                -------------         ------ ----                                                                                                                                                                                
+[00:06:43] d-----        7/15/2023   1:57 PM                lib                                                                                                                                                                                 
+[00:06:43] 
+[00:06:43] 
+[00:06:43] Get-ChildItem -Path build/x64/Release/*.exe -Recurse -File | Copy-Item -Destination artifacts/bin
+[00:06:43] Get-ChildItem -Path build/x64/Release/*.dll -Recurse -File | Copy-Item -Destination artifacts/bin
+[00:06:43] Get-ChildItem -Path build/bin/*.dll -Recurse -File | Copy-Item -Destination artifacts/bin
+[00:06:43] Get-ChildItem -Path examples/media/* -Recurse -File | Copy-Item -Destination artifacts/examples/media
+[00:06:43] Copy-Item include/openpose -Recurse -Destination artifacts/include/
+[00:06:43] Copy-Item 3rdparty/windows/opencv/include/opencv2 -Recurse -Destination artifacts/include/
+[00:06:43] Get-ChildItem -Path build/*.lib -Recurse -File | Copy-Item -Destination artifacts/lib
+[00:06:43] Get-ChildItem -Path 3rdparty/*.lib -Recurse -File | Copy-Item -Destination artifacts/lib
+[00:06:44] Copy-Item models -Recurse -Destination artifacts/
+[00:06:44] cd artifacts
+[00:06:44] cd ..
+[00:06:44] .\artifacts\bin\OpenPoseDemo.exe --image_dir examples/media/ --net_resolution -1x32 --write_json output/ --write_images output/ --display 0
+[00:06:44] Starting OpenPose demo...
+[00:06:44] Configuring OpenPose...
+[00:06:44] Starting thread(s)...
+[00:06:44] ---------------------------------- WARNING ----------------------------------
+[00:06:44] We have introduced an additional boost in accuracy in the CUDA version of about 0.2% with respect to the CPU/OpenCL versions. We will not port this to CPU given the considerable slow down in speed it would add to it. Nevertheless, this accuracy boost is almost insignificant so the CPU/OpenCL versions can be safely used.
+[00:06:44] -------------------------------- END WARNING --------------------------------
+[00:06:52] OpenPose demo successfully finished. Total time: 7.736656 seconds.
+[00:06:53] Discovering tests...OK
+[00:06:53] Build success
